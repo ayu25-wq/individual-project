@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1><font color="red">Form Project - Survey</font></h1></center>
+    <form>
+        <center>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+
+    <label for="major">Major:</label>
+    <input type="text" id="major" name="major" placeholder="Your major">
+    </center>
+
+
+    <br></br>
+
+    <fieldset>
+        <legend><font color="red">Your Details</font></legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com">
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <p>Grade:</p>
+        <select name="grade" id="grade">
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend><font color="red">Semester Feedback</font></legend>
+        <p>How is your semester going?</p>
+        <select name="semester" id="semester">
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Average">Average</option>
+            <option value="Bad">Bad</option>
+             </select>
+
+        <p>Which subjects are challenging?</p>
+
+        <input type="checkbox" id="Web" name="subject" value="web">
+        <label for="Web">Web </label>
+
+        <input type="checkbox" id="Python" name="subject" value="python">
+        <label for="Python">Python </label>
+
+        <input type="checkbox" id="English" name="subject" value="english">
+        <label for="English">English </label>
+
+        <input type="checkbox" id="Math" name="subject" value="math">
+        <label for="Math">Math </label>
+
+        <p>Favorite day of the week:</p>
+        <input type="radio" id="Monday" name="day" value="Monday">
+        <label for="Monday">Monday</label>
+        <input type="radio" id="Tuesday" name="day" value="Tuesday">
+        <label for="Tuesday">Tuesday</label>
+        <input type="radio" id="Wednesday" name="day" value="Wednesday">
+        <label for="Wednesday">Wednesday</label>    
+        <input type="radio" id="Thursday" name="day" value="Thursday">
+        <label for="Thursday">Thursday</label>
+        <input type="radio" id="Friday" name="day" value="Friday">
+        <label for="Friday">Friday</label>
+    </fieldset>
+
+    <p>Additional comments:</p>
+    <textarea name="comments" id="comments" cols="30" rows="4" placeholder="Your Feedback..."></textarea>
+
+    <br>
+    <input type="submit" value="Submit Survey"
+    style="background-color: red; color: black;">
+</form>
+</body>
+</html>
